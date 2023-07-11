@@ -6,6 +6,10 @@ import Button from '../UI/Button/Button';
 
 const Login = (props) => {
 
+  // const {isValid: emailIsValid} = emailState;
+  // const {isValid: passwordIsValid} = passwordState;
+
+
   const emailReducer = (state, action) => {
     if(action.type === "USER_INPUT") {
       return { value: action.val, isValid: action.val.includes('@')}
